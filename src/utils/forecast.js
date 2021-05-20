@@ -10,8 +10,6 @@ const forecast = (latitude, longitude, callback) => {
     const humidity = body.current.humidity
     const cloudcover = body.current.cloudcover
     
-    console.log(body);
-
     if (error) {
       callback('Unable to connect to weather service!')
     } else if (body.error) {
